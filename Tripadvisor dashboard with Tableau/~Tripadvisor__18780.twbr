@@ -1,0 +1,2239 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='review_data' inline='true' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='review_data' name='textscan.0dg5yhx0nk8ewi12uj8i81o8m99g'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/dell/Desktop/Tripadvisor dashboard with Tableau/review_data.csv' dataRefreshTime='' directory='C:/Users/dell/Desktop/Tripadvisor dashboard with Tableau' filename='C:/Users/dell/AppData/Local/Temp/TableauTemp/1j5bqw31xzwfd515ydqjt03ocv7j/review_data.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0dg5yhx0nk8ewi12uj8i81o8m99g' name='review_data.csv' table='[C:\Users\dell\Desktop\Tripadvisor dashboard with Tableau\review_data#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:T505:no:A1:T505:1' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='User country' ordinal='0' />
+            <column datatype='integer' name='Nr. reviews' ordinal='1' />
+            <column datatype='integer' name='Nr. hotel reviews' ordinal='2' />
+            <column datatype='integer' name='Helpful votes' ordinal='3' />
+            <column datatype='integer' name='Score' ordinal='4' />
+            <column datatype='string' name='Period of stay' ordinal='5' />
+            <column datatype='string' name='Traveler type' ordinal='6' />
+            <column datatype='string' name='Swimming Pool' ordinal='7' />
+            <column datatype='string' name='Exercise Room' ordinal='8' />
+            <column datatype='string' name='Basketball Court' ordinal='9' />
+            <column datatype='string' name='Yoga Classes' ordinal='10' />
+            <column datatype='string' name='Club' ordinal='11' />
+            <column datatype='string' name='Free Wifi' ordinal='12' />
+            <column datatype='string' name='Hotel name' ordinal='13' />
+            <column datatype='string' name='Hotel stars' ordinal='14' />
+            <column datatype='integer' name='Nr. rooms' ordinal='15' />
+            <column datatype='string' name='User continent' ordinal='16' />
+            <column datatype='integer' name='Member years' ordinal='17' />
+            <column datatype='string' name='Review month' ordinal='18' />
+            <column datatype='string' name='Review weekday' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T505:no:A1:T505:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[User country]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>User country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nr. reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nr. reviews]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Nr. reviews</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nr. hotel reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nr. hotel reviews]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Nr. hotel reviews</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Helpful votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Helpful votes]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Helpful votes</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Score]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period of stay</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Period of stay]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Period of stay</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Traveler type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Traveler type]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Traveler type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Swimming Pool</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Swimming Pool]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Swimming Pool</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exercise Room</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exercise Room]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Exercise Room</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Basketball Court</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Basketball Court]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Basketball Court</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Yoga Classes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Yoga Classes]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Yoga Classes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Club</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Club]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Club</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Free Wifi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Free Wifi]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Free Wifi</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hotel name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hotel name]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Hotel name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hotel stars</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hotel stars]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Hotel stars</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nr. rooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nr. rooms]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Nr. rooms</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[User continent]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>User continent</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Member years</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Member years]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Member years</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Review month]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Review month</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review weekday</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Review weekday]</local-name>
+            <parent-name>[review_data.csv]</parent-name>
+            <remote-alias>Review weekday</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Hotels' datatype='string' name='[Calculation_1120189908226048]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total Hotels&quot;' />
+      </column>
+      <column caption='Avg No. of Rooms' datatype='string' name='[Calculation_1120189911175169]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Avg No.of Rooms&quot;' />
+      </column>
+      <column caption='Avg. Score' datatype='string' name='[Calculation_1120189911609346]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Avg. Score&quot;' />
+      </column>
+      <column caption='Users Avg Reviews' datatype='string' name='[Calculation_1120189911957507]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Users Avg Reviews&quot;' />
+      </column>
+      <column datatype='string' name='[Period of stay]' role='dimension' type='nominal' />
+      <column datatype='string' name='[User country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='review_data.csv' datatype='table' name='[__tableau_internal_object_id__].[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]' role='measure' type='quantitative' />
+      <column-instance column='[Period of stay]' derivation='None' name='[none:Period of stay:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/dell/AppData/Local/Temp/TableauTemp/#TableauTemp_05s91431mwxpw01gb6hvb16k3c5q.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/22/2026 12:05:38 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>User country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[User country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>User country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nr. reviews</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nr. reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nr. reviews</remote-alias>
+              <ordinal>1</ordinal>
+              <family>review_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>139</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nr. hotel reviews</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nr. hotel reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nr. hotel reviews</remote-alias>
+              <ordinal>2</ordinal>
+              <family>review_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Helpful votes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Helpful votes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Helpful votes</remote-alias>
+              <ordinal>3</ordinal>
+              <family>review_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Score</remote-alias>
+              <ordinal>4</ordinal>
+              <family>review_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Period of stay</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Period of stay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Period of stay</remote-alias>
+              <ordinal>5</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Traveler type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Traveler type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Traveler type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Swimming Pool</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Swimming Pool]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Swimming Pool</remote-alias>
+              <ordinal>7</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exercise Room</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Exercise Room]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exercise Room</remote-alias>
+              <ordinal>8</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Basketball Court</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Basketball Court]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Basketball Court</remote-alias>
+              <ordinal>9</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Yoga Classes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Yoga Classes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Yoga Classes</remote-alias>
+              <ordinal>10</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Club</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Club]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Club</remote-alias>
+              <ordinal>11</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Free Wifi</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Free Wifi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Free Wifi</remote-alias>
+              <ordinal>12</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hotel name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Hotel name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hotel name</remote-alias>
+              <ordinal>13</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hotel stars</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Hotel stars]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hotel stars</remote-alias>
+              <ordinal>14</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nr. rooms</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nr. rooms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nr. rooms</remote-alias>
+              <ordinal>15</ordinal>
+              <family>review_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>User continent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[User continent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>User continent</remote-alias>
+              <ordinal>16</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Member years</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Member years]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Member years</remote-alias>
+              <ordinal>17</ordinal>
+              <family>review_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Review month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Review month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Review month</remote-alias>
+              <ordinal>18</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Review weekday</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Review weekday]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Review weekday</remote-alias>
+              <ordinal>19</ordinal>
+              <family>review_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[review_data.csv_47CE90CB4C5A45428486A108CB58FF6F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Period of stay:nk]' palette='gray_10_0' type='palette'>
+            <map to='#49525e'>
+              <bucket>&quot;Sep-Nov&quot;</bucket>
+            </map>
+            <map to='#707c83'>
+              <bucket>&quot;Mar-May&quot;</bucket>
+            </map>
+            <map to='#a1a7a9'>
+              <bucket>&quot;Jun-Aug&quot;</bucket>
+            </map>
+            <map to='#d5d5d5'>
+              <bucket>&quot;Dec-Feb&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='review_data.csv' id='review_data.csv_47CE90CB4C5A45428486A108CB58FF6F'>
+            <properties context=''>
+              <relation connection='textscan.0dg5yhx0nk8ewi12uj8i81o8m99g' name='review_data.csv' table='[C:\Users\dell\Desktop\Tripadvisor dashboard with Tableau\review_data#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:T505:no:A1:T505:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='User country' ordinal='0' />
+                  <column datatype='integer' name='Nr. reviews' ordinal='1' />
+                  <column datatype='integer' name='Nr. hotel reviews' ordinal='2' />
+                  <column datatype='integer' name='Helpful votes' ordinal='3' />
+                  <column datatype='integer' name='Score' ordinal='4' />
+                  <column datatype='string' name='Period of stay' ordinal='5' />
+                  <column datatype='string' name='Traveler type' ordinal='6' />
+                  <column datatype='string' name='Swimming Pool' ordinal='7' />
+                  <column datatype='string' name='Exercise Room' ordinal='8' />
+                  <column datatype='string' name='Basketball Court' ordinal='9' />
+                  <column datatype='string' name='Yoga Classes' ordinal='10' />
+                  <column datatype='string' name='Club' ordinal='11' />
+                  <column datatype='string' name='Free Wifi' ordinal='12' />
+                  <column datatype='string' name='Hotel name' ordinal='13' />
+                  <column datatype='string' name='Hotel stars' ordinal='14' />
+                  <column datatype='integer' name='Nr. rooms' ordinal='15' />
+                  <column datatype='string' name='User continent' ordinal='16' />
+                  <column datatype='integer' name='Member years' ordinal='17' />
+                  <column datatype='string' name='Review month' ordinal='18' />
+                  <column datatype='string' name='Review weekday' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Avg No. of Rooms'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='review_data' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p4v6bj0y8u6r21fxirg01gk0dv1'>
+            <column caption='Avg No. of Rooms' datatype='string' name='[Calculation_1120189911175169]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Avg No.of Rooms&quot;' />
+            </column>
+            <column datatype='integer' name='[Nr. rooms]' role='measure' type='quantitative' />
+            <column-instance column='[Nr. rooms]' derivation='Avg' name='[avg:Nr. rooms:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1120189911175169]' derivation='None' name='[none:Calculation_1120189911175169:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='128' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00af87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Calculation_1120189911175169:nk]' />
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[avg:Nr. rooms:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7D6CDAEE-587B-4DD4-A106-DBB2F64A4191}' />
+    </worksheet>
+    <worksheet name='Avg. Score'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='review_data' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p4v6bj0y8u6r21fxirg01gk0dv1'>
+            <column caption='Avg. Score' datatype='string' name='[Calculation_1120189911609346]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Avg. Score&quot;' />
+            </column>
+            <column datatype='integer' name='[Nr. reviews]' role='measure' type='quantitative' />
+            <column-instance column='[Nr. reviews]' derivation='Avg' name='[avg:Nr. reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1120189911609346]' derivation='None' name='[none:Calculation_1120189911609346:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='99' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00af87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Calculation_1120189911609346:nk]' />
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[avg:Nr. reviews:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F31DD8CC-3190-4D55-824B-CA7AD6A797E4}' />
+    </worksheet>
+    <worksheet name='Top 10 Hotels by Total Rooms'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='review_data' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p4v6bj0y8u6r21fxirg01gk0dv1'>
+            <column datatype='string' name='[Hotel name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Nr. rooms]' role='measure' type='quantitative' />
+            <column-instance column='[Nr. rooms]' derivation='Avg' name='[avg:Nr. rooms:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hotel name]' derivation='None' name='[none:Hotel name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Hotel name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Nr. rooms])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Hotel name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Hotel name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[avg:Nr. rooms:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Hotel name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='rows' value='bold' />
+            <format attr='color' data-class='total' scope='rows' value='#000000' />
+            <format attr='color' data-class='total' scope='cols' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='cols' value='bold' />
+            <format attr='font-family' data-class='total' scope='cols' value='Tableau Bold' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='width' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Hotel name:nk]' value='332' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#000000' />
+            <format attr='font-family' scope='rows' value='Tableau Bold' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='color' scope='cols' value='#000000' />
+            <format attr='font-family' scope='cols' value='Tableau Bold' />
+            <format attr='font-weight' scope='rows' value='normal' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[avg:Nr. rooms:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[avg:Nr. rooms:qk]' palette='gray_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00af87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[avg:Nr. rooms:qk]' />
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[avg:Nr. rooms:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-transparency' value='180' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Hotel name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{7A55C113-F7BE-4120-AE82-0B8D27F9DCB7}' />
+    </worksheet>
+    <worksheet name='Total Hotel by Stars'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='review_data' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p4v6bj0y8u6r21fxirg01gk0dv1'>
+            <column datatype='string' name='[Hotel name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Hotel stars]' role='dimension' type='nominal' />
+            <column datatype='string' name='[User continent]' role='dimension' type='nominal' />
+            <column-instance column='[User continent]' derivation='Count' name='[cnt:User continent:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hotel name]' derivation='CountD' name='[ctd:Hotel name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hotel stars]' derivation='None' name='[none:Hotel stars:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Hotel stars:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[ctd:Hotel name:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+            <format attr='title' class='0' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[ctd:Hotel name:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='rows' value='bold' />
+            <format attr='color' data-class='total' scope='rows' value='#000000' />
+            <format attr='color' data-class='total' scope='cols' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='cols' value='bold' />
+            <format attr='font-family' data-class='total' scope='cols' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:User continent:qk]' value='bold' />
+            <format attr='color' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:User continent:qk]' value='#000000' />
+            <format attr='color' scope='rows' value='#000000' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='font-family' scope='rows' value='Tableau Bold' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='color' scope='cols' value='#000000' />
+            <format attr='font-family' scope='cols' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00af87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:User continent:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-family' value='Tableau Bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#1b1b1b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[ctd:Hotel name:qk]</rows>
+        <cols>[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Hotel stars:nk]</cols>
+      </table>
+      <simple-id uuid='{53485B90-C395-4868-A662-4B95861C401C}' />
+    </worksheet>
+    <worksheet name='Total Hotels'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='review_data' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p4v6bj0y8u6r21fxirg01gk0dv1'>
+            <column caption='Total Hotels' datatype='string' name='[Calculation_1120189908226048]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total Hotels&quot;' />
+            </column>
+            <column datatype='string' name='[Hotel name]' role='dimension' type='nominal' />
+            <column-instance column='[Hotel name]' derivation='CountD' name='[ctd:Hotel name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1120189908226048]' derivation='None' name='[none:Calculation_1120189908226048:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='94' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00af87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Calculation_1120189908226048:nk]' />
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[ctd:Hotel name:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8604EE85-DB76-460A-87F2-447CF8C05F97}' />
+    </worksheet>
+    <worksheet name='Total Hotels by additional Services'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='review_data' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p4v6bj0y8u6r21fxirg01gk0dv1'>
+            <column datatype='string' name='[Basketball Court]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Club]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Exercise Room]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Free Wifi]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Hotel name]' role='dimension' type='nominal' />
+            <column-instance column='[Hotel name]' derivation='CountD' name='[ctd:Hotel name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Basketball Court]' derivation='None' name='[none:Basketball Court:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Club]' derivation='None' name='[none:Club:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Exercise Room]' derivation='None' name='[none:Exercise Room:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Free Wifi]' derivation='None' name='[none:Free Wifi:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='border-color' value='#000000' />
+            <format attr='vertical-align' data-class='total' value='bottom' />
+            <format attr='vertical-align' data-class='subtotal' value='bottom' />
+            <format attr='font-weight' value='normal' />
+            <format attr='font-weight' data-class='total' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Free Wifi:nk]' value='100' />
+            <format attr='width' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Exercise Room:nk]' value='120' />
+            <format attr='width' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Club:nk]' value='104' />
+            <format attr='width' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Basketball Court:nk]' value='132' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='font-weight' data-class='subtotal' value='normal' />
+            <format attr='vertical-align' data-class='total' value='bottom' />
+            <format attr='vertical-align' data-class='subtotal' value='bottom' />
+            <format attr='font-weight' data-class='total' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[ctd:Hotel name:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[ctd:Hotel name:qk]' palette='gray_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00af87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#000000' />
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[ctd:Hotel name:qk]' />
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[ctd:Hotel name:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-transparency' value='180' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Free Wifi:nk] / ([federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Exercise Room:nk] / ([federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Club:nk] / [federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Basketball Court:nk])))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{48D63B8F-FF9D-43C9-B2BF-D159770B4AE1}' />
+    </worksheet>
+    <worksheet name='Total Users by Continent '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='review_data' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p4v6bj0y8u6r21fxirg01gk0dv1'>
+            <column datatype='string' name='[User continent]' role='dimension' type='nominal' />
+            <column-instance column='[User continent]' derivation='Count' name='[cnt:User continent:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[User continent]' derivation='None' name='[none:User continent:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:User continent:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:User continent:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:User continent:qk]' scope='cols' value='' />
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='rows' value='bold' />
+            <format attr='color' data-class='total' scope='rows' value='#000000' />
+            <format attr='color' data-class='total' scope='cols' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='cols' value='bold' />
+            <format attr='font-family' data-class='total' scope='cols' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:User continent:nk]' value='bold' />
+            <format attr='color' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:User continent:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:User continent:qk]' value='bold' />
+            <format attr='color' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:User continent:qk]' value='#000000' />
+            <format attr='color' scope='rows' value='#000000' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='font-family' scope='rows' value='Tableau Bold' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='color' scope='cols' value='#000000' />
+            <format attr='font-family' scope='cols' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00af87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:User continent:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-family' value='Tableau Bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#1b1b1b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:User continent:nk]</rows>
+        <cols>[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:User continent:qk]</cols>
+      </table>
+      <simple-id uuid='{1284C780-AE36-40BD-B5E7-0D6E3B57507F}' />
+    </worksheet>
+    <worksheet name='Traveler Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='review_data' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p4v6bj0y8u6r21fxirg01gk0dv1'>
+            <column datatype='string' name='[Traveler type]' role='dimension' type='nominal' />
+            <column-instance column='[Traveler type]' derivation='Count' name='[cnt:Traveler type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Traveler type]' derivation='None' name='[none:Traveler type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='rows' value='bold' />
+            <format attr='color' data-class='total' scope='rows' value='#000000' />
+            <format attr='color' data-class='total' scope='cols' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='cols' value='bold' />
+            <format attr='font-family' data-class='total' scope='cols' value='Tableau Bold' />
+            <format attr='width' value='1389' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#000000' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='font-family' scope='rows' value='Tableau Bold' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='color' scope='cols' value='#000000' />
+            <format attr='font-family' scope='cols' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:Traveler type:qk]' palette='gray_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00af87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:Traveler type:qk]' />
+              <color column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:Traveler type:qk]' />
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Traveler type:nk]' />
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:Traveler type:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-family' value='Tableau Bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-transparency' value='180' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{324C4679-101E-4AC5-B1A9-8C8A73AB1845}' />
+    </worksheet>
+    <worksheet name='Users Avg Reviews'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='review_data' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p4v6bj0y8u6r21fxirg01gk0dv1'>
+            <column caption='Users Avg Reviews' datatype='string' name='[Calculation_1120189911957507]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Users Avg Reviews&quot;' />
+            </column>
+            <column datatype='integer' name='[Nr. hotel reviews]' role='measure' type='quantitative' />
+            <column-instance column='[Nr. hotel reviews]' derivation='Avg' name='[avg:Nr. hotel reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1120189911957507]' derivation='None' name='[none:Calculation_1120189911957507:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='131' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00af87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Calculation_1120189911957507:nk]' />
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[avg:Nr. hotel reviews:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{95613222-E601-4F46-BED7-67EC6CA11CEF}' />
+    </worksheet>
+    <worksheet name='Users by Period of Stay'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='review_data' name='federated.0p4v6bj0y8u6r21fxirg01gk0dv1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0p4v6bj0y8u6r21fxirg01gk0dv1'>
+            <column datatype='string' name='[Period of stay]' role='dimension' type='nominal' />
+            <column-instance column='[Period of stay]' derivation='Count' name='[cnt:Period of stay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Period of stay]' derivation='None' name='[none:Period of stay:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='1360' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='rows' value='bold' />
+            <format attr='color' data-class='total' scope='rows' value='#000000' />
+            <format attr='color' data-class='total' scope='cols' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='cols' value='bold' />
+            <format attr='font-family' data-class='total' scope='cols' value='Tableau Bold' />
+            <format attr='font-family' data-class='total' scope='rows' value='Tableau Bold' />
+            <format attr='font-size' data-class='total' scope='rows' value='10' />
+            <format attr='font-family' data-class='subtotal' value='Tableau Bold' />
+            <format attr='font-size' data-class='subtotal' value='10' />
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='font-family' data-class='total' value='Tableau Bold' />
+            <format attr='font-size' data-class='total' value='10' />
+            <format attr='font-weight' data-class='total' value='bold' />
+            <format attr='color' data-class='total' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#000000' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='font-family' scope='rows' value='Tableau Bold' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='color' scope='cols' value='#000000' />
+            <format attr='font-family' scope='cols' value='Tableau Bold' />
+            <format attr='font-size' scope='rows' value='10' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00af87' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:Period of stay:qk]' />
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Period of stay:nk]' />
+              <text column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:Period of stay:qk]' />
+              <color column='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Period of stay:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AAD828D3-402E-4CE3-878F-B8323422AB82}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Tripadvisor'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#00af87' />
+        </style-rule>
+      </style>
+      <size maxheight='1460' maxwidth='1620' minheight='860' minwidth='1620' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98150' id='7' param='horz' type-v2='layout-flow' w='99012' x='494' y='925'>
+            <zone h='98150' id='5' type-v2='layout-basic' w='99012' x='494' y='925'>
+              <zone h='49075' id='3' name='Top 10 Hotels by Total Rooms' w='26049' x='73457' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41156' id='9' name='Traveler Type' w='20988' x='52469' y='57919'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41156' id='11' name='Users by Period of Stay' w='23177' x='29292' y='57919'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41156' id='13' name='Total Hotel by Stars' w='28798' x='494' y='57919'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49075' id='14' name='Total Users by Continent ' w='26049' x='73457' y='925'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='56994' id='15' name='Total Hotels by additional Services' w='32839' x='494' y='925'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10405' id='17' name='Total Hotels' show-title='false' w='10741' x='33333' y='47514'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10405' id='18' name='Avg No. of Rooms' show-title='false' w='10247' x='52469' y='47514'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10405' id='19' name='Avg. Score' show-title='false' w='8395' x='44074' y='47514'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10405' id='20' name='Users Avg Reviews' show-title='false' w='10741' x='62716' y='47514'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46589' id='21' is-scaled='1' param='C:/Users/dell/Desktop/Tripadvisor dashboard with Tableau/tripadvisor-logo.png' type-v2='bitmap' w='40124' x='33333' y='925'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='462' id='22' type-v2='empty' w='34506' x='36173' y='48208'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+          </zone-style>
+        </zone>
+        <zone h='6590' id='23' type-v2='empty' w='247' x='52840' y='49711'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2650' minheight='2650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98150' id='24' param='vert' type-v2='layout-flow' w='99012' x='494' y='925'>
+                <zone fixed-size='280' h='56994' id='15' is-fixed='true' name='Total Hotels by additional Services' w='32839' x='494' y='925'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46589' id='21' is-fixed='true' is-scaled='1' param='C:/Users/dell/Desktop/Tripadvisor dashboard with Tableau/tripadvisor-logo.png' type-v2='bitmap' w='40124' x='33333' y='925'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49075' id='14' is-fixed='true' name='Total Users by Continent ' w='26049' x='73457' y='925'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='144' h='10405' id='17' is-fixed='true' name='Total Hotels' show-title='false' w='10741' x='33333' y='47514'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='144' h='10405' id='19' is-fixed='true' name='Avg. Score' show-title='false' w='8395' x='44074' y='47514'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='144' h='10405' id='18' is-fixed='true' name='Avg No. of Rooms' show-title='false' w='10247' x='52469' y='47514'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='144' h='10405' id='20' is-fixed='true' name='Users Avg Reviews' show-title='false' w='10741' x='62716' y='47514'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49075' id='3' is-fixed='true' name='Top 10 Hotels by Total Rooms' w='26049' x='73457' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41156' id='13' is-fixed='true' name='Total Hotel by Stars' w='28798' x='494' y='57919'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41156' id='11' is-fixed='true' name='Users by Period of Stay' w='23177' x='29292' y='57919'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41156' id='9' is-fixed='true' name='Traveler Type' w='20988' x='52469' y='57919'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{26FF0392-7DC6-4A8D-A1F2-B20903DF6558}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Hotels'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{14DB8D09-5421-44CD-8F88-9E40E3BA1998}' />
+    </window>
+    <window class='worksheet' name='Avg No. of Rooms'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F3674ADD-EF67-4A97-A30E-7ADA0C8FB0D5}' />
+    </window>
+    <window class='worksheet' name='Avg. Score'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C41B7945-7C85-4B67-BF91-1C7A45AC0C46}' />
+    </window>
+    <window class='worksheet' name='Users Avg Reviews'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CD71601F-78B0-48FC-B1F3-47B46591219D}' />
+    </window>
+    <window class='worksheet' name='Total Hotels by additional Services'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[ctd:Hotel name:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6676CBCC-7283-45F6-A359-CCDF6A438929}' />
+    </window>
+    <window class='worksheet' name='Total Users by Continent '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CCDC3E36-5BCC-46DD-9993-78651833962C}' />
+    </window>
+    <window class='worksheet' name='Total Hotel by Stars'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F1548B42-F917-4977-9E18-E82D0913A90C}' />
+    </window>
+    <window class='worksheet' name='Users by Period of Stay'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[none:Period of stay:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7F94577A-C554-4215-ADC9-35CF4B7DC528}' />
+    </window>
+    <window class='worksheet' name='Traveler Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[cnt:Traveler type:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A973F156-0810-44B5-8655-FCB14D6D9DED}' />
+    </window>
+    <window class='worksheet' name='Top 10 Hotels by Total Rooms'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0p4v6bj0y8u6r21fxirg01gk0dv1].[avg:Nr. rooms:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A16C0189-430F-48FD-A833-1BDDDD97B5DD}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Tripadvisor'>
+      <viewpoints>
+        <viewpoint name='Avg No. of Rooms'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg. Score'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Hotels by Total Rooms'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Hotel by Stars'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Hotels'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Hotels by additional Services'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Users by Continent '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Traveler Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Users Avg Reviews'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Users by Period of Stay'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0E85C237-15D5-4F46-B9D6-276C31A71E81}' />
+    </window>
+  </windows>
+</workbook>
